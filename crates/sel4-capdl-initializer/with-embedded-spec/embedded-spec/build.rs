@@ -23,7 +23,7 @@ fn main() {
     let out_dir = PathBuf::from(env::var("OUT_DIR").unwrap());
 
     {
-        let formatted = prettyplease::unparse(&syn::parse2(embedded_spec).unwrap());
+        let formatted = prettyplease_verus::unparse(&syn::parse2(embedded_spec).unwrap());
         let spec_out_path = out_dir.join("spec.rs");
         fs::write(&spec_out_path, formatted).unwrap();
     }

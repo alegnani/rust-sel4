@@ -36,7 +36,7 @@ cc = "1.0.76"
 glob = "0.3.0"
 object = "0.36.5"
 postcard = { version = "1.0.2", default-features = false, features = ["alloc"] }
-prettyplease = "0.2.25"
+prettyplease_verus = { path = "../../../verus/dependencies/prettyplease" }
 proc-macro2 = "1.0.89"
 quote = "1.0.37"
 sel4-build-env = { path = "../sel4/build-env" }

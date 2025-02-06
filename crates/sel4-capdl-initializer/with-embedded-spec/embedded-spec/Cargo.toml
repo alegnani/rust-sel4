@@ -23,7 +23,7 @@ deflate = ["sel4-capdl-initializer-types/deflate"]
 sel4-capdl-initializer-types = { path = "../../types", features = ["borrowed-indirect"] }
 
 [build-dependencies]
-prettyplease = "0.2.25"
+prettyplease_verus = { path = "../../../../../verus/dependencies/prettyplease"}
 sel4-capdl-initializer-embed-spec = { path = "../../embed-spec" }
 sel4-capdl-initializer-types = { path = "../../types" }
 sel4-capdl-initializer-with-embedded-spec-build-env = { path = "../build-env" }

@@ -82,7 +82,7 @@ fn main() {
 
     if let "aarch64" | "aarch32" = sel4_cfg_str!(SEL4_ARCH) {
         let toks = mk_loader_map();
-        let formatted = prettyplease::unparse(&syn::parse2(toks).unwrap());
+        let formatted = prettyplease_verus::unparse(&syn::parse2(toks).unwrap());
         let out_path = PathBuf::from(&out_dir).join("loader_page_tables.rs");
         fs::write(&out_path, formatted).unwrap();
     }
@@ -98,7 +98,7 @@ fn main() {
 
     {
         let toks = mk_kernel_map(kernel_phys_addr_range, kernel_phys_to_virt_offset);
-        let formatted = prettyplease::unparse(&syn::parse2(toks).unwrap());
+        let formatted = prettyplease_verus::unparse(&syn::parse2(toks).unwrap());
         let out_path = PathBuf::from(&out_dir).join("kernel_page_tables.rs");
         fs::write(&out_path, formatted).unwrap();
     }
