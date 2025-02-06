@@ -25,7 +25,7 @@ sel4-config = { path = "../config" }
 [build-dependencies]
 bindgen = "0.70.1"
 glob = "0.3.0"
-prettyplease = "0.2.25"
+prettyplease = "0.2.29"
 proc-macro2 = "1.0.89"
 quote = "1.0.37"
 sel4-bitfield-parser = { path = "../bitfield-parser" }
